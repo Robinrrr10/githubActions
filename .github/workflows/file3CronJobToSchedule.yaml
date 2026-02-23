@@ -1,10 +1,10 @@
-name: Run a python file
+name: Run Crob Job
 on:
   schedule:
     - cron: '* * * * *'
 
 jobs:
-  pythonPrintHello:
+  runCron:
     runs-on: ubuntu-latest
 
     steps:
