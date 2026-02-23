@@ -1,0 +1,20 @@
+name: Run a python file
+on: push
+
+jobs:
+  pythonPrintHello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v6
+      
+      - name: Doing Python Setup
+        uses: actions/setup-python@v6.2.0
+        with: 
+          python-version: '3.10'
+    
+      - name: Running Python File
+        run: python file2PythonFile.py
+
+        
